@@ -1,0 +1,65 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.rsa.MainActivity" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <EditText
+                android:id="@+id/etEncodeThings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="输入需加密的内容" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/btnEncode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="加密" />
+
+                <Button
+                    android:id="@+id/btnDecode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="解密" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/etEncoded"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="加密后的内容" />
+
+            <EditText
+                android:id="@+id/etDecode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="解密后的内容" />
+
+            <TextView
+                android:id="@+id/tvPrivate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="生成的私钥" />
+
+            <TextView
+                android:id="@+id/tvPublic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="生成的公钥" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
